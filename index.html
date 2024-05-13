@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+<style>
+    .text-center{
+        text-align: center;
+    }
+    .header{
+        margin: 30px;
+    }
+    .container{
+        margin: 20px auto;
+    }
+    .center{
+        margin: 0px 45%;
+    }
+    .d-none{
+        display: none;
+    }
+    .danger{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="text-center">Check List for <b>REACT</b></h1>
+    </header>
+    <main class="container">
+        <section>
+            <h3>Add New Task?</h3>
+            <p id="warn" class="d-none danger">Warning: Enter a valid Data</p>
+            <input id="task-name" type="text" placeholder="Task Name">
+            <input id="deadline" type="text" placeholder="Deadline">
+        </section>
+        <section class="center">
+            <button onclick="setData()" id="btn-add-item">Add Task</button>
+            
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Task Name</th>
+                    <th>Deadline</th>
+                    <th>Is Done?</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                    
+                </tbody>
+              </table>
+        </section>
+
+    </main>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
